@@ -1,0 +1,17 @@
+<div>
+  <h1 class="text-center">Book an Appointment</h1>
+  <h4 class="text-center">Our Investing Topics</h4>
+  <h3 class="text-center">Pick a topic, then we'll find a time and place</h3>
+  <table class="table">
+    <tr *ngFor="let app of [0,1,2,3,4]; let i = index">
+      <td>
+        <button>{{app}}</button>
+        <span>{{i}}</span>
+      </td>
+      <td>
+        <button>{{app}}</button>
+        <span>{{i+1}}</span>
+      </td>
+    </tr>
+  </table>  
+</div>

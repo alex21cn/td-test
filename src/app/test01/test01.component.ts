@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForOf } from '@angular/common';
 
 @Component({
   selector: 'app-test01',
