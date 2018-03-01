@@ -1,0 +1,26 @@
+[
+    {
+        "Id": 1,
+        "Code": "A1",
+        "Type": "textbox",
+        "Title": "Value 1",
+        "Value": 10,
+        "FieldCalculation": ""
+    },
+    {
+        "Id": 2,
+        "Code": "A2",
+        "Type": "textbox",
+        "Title": "Value 2",
+        "Value": 10,
+        "FieldCalculation": ""
+    },
+    {
+        "Id": 3,
+        "Code": "A3",
+        "Type": "label",
+        "Title": "Calculation",
+        "Value": 10,
+        "FieldCalculation": "#A1#+#A2#"
+    }
+]
