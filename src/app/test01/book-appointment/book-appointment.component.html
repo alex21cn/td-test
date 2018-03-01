@@ -2,16 +2,17 @@
   <h1 class="text-center">Book an Appointment</h1>
   <h4 class="text-center">Our Investing Topics</h4>
   <h3 class="text-center">Pick a topic, then we'll find a time and place</h3>
-  <table class="table">
-    <tr *ngFor="let app of [0,1,2,3,4]; let i = index">
+  <table class="table" style="border-top:0px">
+    <tr *ngFor="let i of items">
       <td>
-        <button>{{app}}</button>
-        <span>{{i}}</span>
+        <app-button [app]="appointments[2*i]"></app-button>
       </td>
-      <td>
-        <button>{{app}}</button>
-        <span>{{i+1}}</span>
+      <td *ngIf="appointments.length >= 2*i + 1">
+        <app-button [app]="appointments[2*i + 1]"></app-button>
       </td>
     </tr>
   </table>  
+</div>
+<div>
+  <h4 class="text-center"><a href="home">< Return to previous screen</a></h4>
 </div>

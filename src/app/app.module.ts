@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -9,6 +10,7 @@ import { Test02Component } from './test02/test02.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BookAppointmentComponent } from './test01/book-appointment/book-appointment.component';
 import { AppointmentService } from './test01/appointment.service';
+import { AppointmentButtonComponent } from './test01/appointment-button/appointment-button.component';
 
 
 @NgModule({
@@ -17,11 +19,14 @@ import { AppointmentService } from './test01/appointment.service';
     HomeComponent,
     Test01Component,
     Test02Component,
-    BookAppointmentComponent
+    BookAppointmentComponent,
+    AppointmentButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent],
   providers: [AppointmentService]

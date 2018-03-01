@@ -8,12 +8,15 @@ import {AppointmentService} from '../appointment.service';
   styleUrls: ['./book-appointment.component.scss']
 })
 export class BookAppointmentComponent implements OnInit {
-  appointments = [1, 2, 3];
+  appointments = [];
+  items = [];
   constructor(private service: AppointmentService) {  }
 
   ngOnInit() {
     this.service.getAppointments().subscribe(data => {
       console.log(data);
+      this.appointments = data;
+      this.items = Array(this.appointments.length/2).fill(0).map((x,i) => i);
     });
   }
 
