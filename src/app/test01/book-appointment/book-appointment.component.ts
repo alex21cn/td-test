@@ -16,7 +16,7 @@ export class BookAppointmentComponent implements OnInit {
     this.service.getAppointments().subscribe(data => {
       console.log(data);
       this.appointments = data;
-      this.items = Array(this.appointments.length/2).fill(0).map((x,i) => i);
+      this.items = Array(this.appointments.length / 2).fill(0).map((x, i) => i);
     });
   }
 
