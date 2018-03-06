@@ -11,6 +11,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BookAppointmentComponent } from './test01/book-appointment/book-appointment.component';
 import { AppointmentService } from './test01/appointment.service';
 import { AppointmentButtonComponent } from './test01/appointment-button/appointment-button.component';
+import { FieldComponent } from './test01/field/field.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { AppointmentButtonComponent } from './test01/appointment-button/appointm
     Test01Component,
     Test02Component,
     BookAppointmentComponent,
-    AppointmentButtonComponent
+    AppointmentButtonComponent,
+    FieldComponent
   ],
   imports: [
     BrowserModule,
